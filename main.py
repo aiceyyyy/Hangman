@@ -9,15 +9,11 @@ password_guess = len(password)
 def printHangman(index):
     print(hangman.HANGMANPICS[index])
     print(" ")
-    # For tests
-    # print(password)
-    # print(" ")
 
 print(" ")
 print("Welcome to hangman game!")
 printHangman(0)
 
-# Asking till 0 lifes
 while user_lifes > 0 and password_guess != 0:
     user_guess = input("Guess a letter (category animals): ")
     if user_guess not in password:
@@ -28,7 +24,6 @@ while user_lifes > 0 and password_guess != 0:
         printHangman(hangman_index)
         password_guess -= 1
 
-# Lose info
 if user_lifes == 0:
     print(hangman.HANGMANPICS[-1])
     print(" ")
