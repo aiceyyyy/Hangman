@@ -24,6 +24,7 @@ while user_lifes > 0 and password_guess != 0:
         password_guess -= 1
 
 if user_lifes == 0:
+    print("Guess a letter (category animals): No attempts left...")
     print(hangman.HANGMANPICS[-1])
     print(" ")
     print("You lost!")
@@ -32,3 +33,4 @@ if user_lifes == 0:
 if user_lifes > 0 and password_guess == 0:
     printHangman(hangman_index)
     print("You won!")
+    print(f"The password was: {password}")
