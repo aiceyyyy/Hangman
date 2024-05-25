@@ -5,7 +5,6 @@ password = hangman.words[random.randint(0, 63)]
 hangman_index = 0
 password_guess = len(password)
 
-
 def printHangman(index):
     print(hangman.HANGMANPICS[index])
     print(" ")
